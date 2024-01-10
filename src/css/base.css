@@ -17,6 +17,36 @@ body {
 }
 
 /* Mobile */
+.container {
+  max-width: 375px;
+  padding: 0 20px;
+  margin: 0 auto;
+}
+
+/* Tablet */
+@media only screen and (min-width: 768px) {
+  .container {
+    max-width: 768px;
+    padding: 0 32px;
+  }
+}
+
+/* Desktop */
+@media only screen and (min-width: 1280px) {
+  .container {
+    max-width: 1280px;
+    padding: 0 100px;
+  }
+}
+
+/* Big Desktop */
+@media only screen and (min-width: 1440px) {
+  .container {
+    max-width: 1440px;
+  }
+}
+
+/* Mobile */
 .signup-btn {
   display: inline-block;
   padding: 14px 62px;
@@ -59,37 +89,53 @@ body {
 }
 
 /* Mobile */
-.container {
-  width: 100%;
-  padding: 0 20px;
-  margin: 0 auto;
+.bold-title {
+  color: var(--white);
+  font-size: 40px;
+  font-weight: 500;
+  line-height: 1.1;
+  letter-spacing: -0.04em;
 }
 
-@media only screen and (min-width: 375px) {
-  .container {
-    width: 375px;
-  }
-}
-
-/* Tablet */
+/* Tablet  */
 @media only screen and (min-width: 768px) {
-  .container {
-    width: 768px;
-    padding: 0 32px;
+  .bold-title {
+    font-size: 60px;
+    line-height: 1.07;
   }
 }
 
-/* Desktop */
+/* Desktop - Big Desktop */
 @media only screen and (min-width: 1280px) {
-  .container {
-    width: 1280px;
-    padding: 0 100px;
+  .bold-title {
+    font-size: 64px;
+    line-height: 1.06;
   }
 }
 
-/* Big Desktop */
-@media only screen and (min-width: 1440px) {
-  .container {
-    width: 1440px;
+/* Mobile */
+.medium-title {
+  color: var(--white);
+  font-size: 28px;
+  font-weight: 500;
+  line-height: 1.14;
+  letter-spacing: -0.04em;
+}
+
+/* Tablet - Desktop - Big Desktop */
+@media only screen and (min-width: 768px) {
+  .medium-title {
+    font-size: 48px;
+    line-height: 1.12;
   }
+}
+
+.text-decoration {
+  color: var(--brown);
+}
+
+.text-decoration-italic {
+  color: var(--brown);
+  font-weight: 400;
+  font-style: italic;
 }
