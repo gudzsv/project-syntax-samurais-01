@@ -1,0 +1,115 @@
+ol {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.courses {
+  background-color: #121212;
+  max-width: 1440px;
+  margin: 0 auto;
+  padding-left: 100px;
+  padding-right: 100px;
+}
+.container {
+  max-width: 1240px;
+  margin-bottom: 150px;
+}
+.courses-wrapper {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 50px;
+}
+.courses-title {
+  color: #fff;
+  font-family: DM Sans;
+  font-size: 48px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 54px; /* 112.5% */
+  letter-spacing: -1.92px;
+}
+.courses-title-span {
+  color: #bea69e;
+  font-family: DM Sans;
+  font-size: 48px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 54px;
+  letter-spacing: -1.92px;
+}
+.courses-text {
+  max-width: 565px;
+  color: #fff;
+  font-family: DM Sans;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 20px; /* 125% */
+  letter-spacing: -0.32px;
+}
+.courses-list {
+  width: 100%;
+  display: flex;
+  gap: 20px;
+}
+.courses-item {
+  width: 400px;
+  height: 452px;
+  flex-shrink: 0;
+  border-radius: 12px;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  background: linear-gradient(180deg, #060707 0%, #1d1d1d 100%);
+  padding: 32px;
+  width: calc(100% - 2 * 20px) / 3;
+}
+.courses-link-wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 32px;
+  width: 100%;
+}
+.courses-item-number {
+  color: rgba(255, 255, 255, 0.4);
+  font-family: DM Sans;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 18px; /* 128.571% */
+  letter-spacing: -0.28px;
+  width: 18px;
+  height: 18px;
+}
+
+.courses-link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #1d1d1d;
+  border-radius: 50%;
+  width: 32px;
+  height: 32px;
+}
+.svg-icon {
+  display: block;
+}
+.courses-title-item {
+  max-width: 265px;
+  color: #fff;
+  font-family: DM Sans;
+  font-size: 28px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 32px; /* 114.286% */
+  margin-bottom: 200px;
+}
+.courses-text-item {
+  color: rgba(255, 255, 255, 0.5);
+  font-family: DM Sans;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 20px; /* 125% */
+  letter-spacing: -0.32px;
+}
