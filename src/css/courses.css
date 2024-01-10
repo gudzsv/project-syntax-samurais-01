@@ -92,7 +92,8 @@ ol {
 }
 .svg-icon {
   display: block;
-  fill: #ffffff66;
+/*   fill: #ffffff66; */
+  stroke: #ffffff66;
 }
 .courses-link:hover,
 .courses-link:focus,
