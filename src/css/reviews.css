@@ -1,0 +1,141 @@
+.reviews {
+  background-color: #121212;
+  padding: 80px 20px;
+}
+
+@media only screen and (min-width: 768px) {
+  .reviews {
+    padding: 100px 32px;
+  }
+}
+
+@media only screen and (min-width: 1280px) {
+  .reviews {
+    padding: 150px 100px;
+  }
+}
+
+.reviews-title {
+  color: #fff;
+  font-family: DM Sans;
+  font-size: 28px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 32px;
+  letter-spacing: -1.12px;
+  max-width: 100px;
+  height: 32px;
+  margin-bottom: 40px;
+}
+
+@media only screen and (min-width: 768px) {
+  .reviews-title {
+    max-width: 171px;
+    height: 54px;
+    font-size: 48px;
+    line-height: 54px;
+    letter-spacing: -1.92px;
+  }
+}
+
+.reviews-list {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.reviews-item {
+  border-radius: 12px;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  padding: 20px;
+}
+
+.reviews-item.girl {
+  display: none;
+}
+
+@media only screen and (min-width: 1280px) {
+  .reviews-item.girl {
+    display: block;
+  }
+  .reviews-item {
+    width: calc((100% - 20px * 1) / 2);
+  }
+  .reviews-item-title.girl {
+    max-width: 152px;
+  }
+}
+@media only screen and (min-width: 768px) {
+  .reviews-item-block {
+    display: flex;
+  }
+}
+
+.reviews-photo {
+  margin-right: 10px;
+}
+.reviews-item-title {
+  max-width: 145px;
+  height: 24px;
+  margin-bottom: 4px;
+  color: #fff;
+  font-family: DM Sans;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 24px;
+}
+@media only screen and (min-width: 768px) {
+  .reviews-item-title {
+    height: 28px;
+    line-height: 28px;
+  }
+}
+
+.reviews-item-role {
+  max-width: 43px;
+  height: 16px;
+  color: rgba(255, 255, 255, 0.5);
+  font-family: DM Sans;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 16px;
+  letter-spacing: -0.24px;
+}
+
+@media only screen and (min-width: 768px) {
+  .reviews-item-role {
+    max-width: 51px;
+    height: 18px;
+    font-size: 14px;
+    line-height: 18px;
+    letter-spacing: -0.28px;
+  }
+}
+.reviews-text {
+  max-width: 295px;
+  height: 108px;
+  color: #fff;
+  font-family: DM Sans;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 18px;
+  letter-spacing: -0.28px;
+}
+
+@media only screen and (min-width: 768px) {
+  .reviews-text {
+    max-width: 600px;
+    height: 80px;
+    font-size: 16px;
+    line-height: 20px;
+    letter-spacing: -0.32px;
+  }
+}
+
+@media only screen and (min-width: 1280px) {
+  .reviews-text {
+    max-width: 490px;
+  }
+}
