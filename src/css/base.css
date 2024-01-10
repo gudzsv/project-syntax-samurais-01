@@ -61,10 +61,7 @@ body {
 /* Mobile */
 .container {
   width: 100%;
-  padding-top: 20px;
-  padding-bottom: 20px;
-  padding-left: 20px;
-  padding-right: 20px;
+  padding: 0 20px;
   margin: 0 auto;
 }
 
@@ -78,8 +75,7 @@ body {
 @media only screen and (min-width: 768px) {
   .container {
     width: 768px;
-    padding-left: 32px;
-    padding-right: 32px;
+    padding: 0 32px;
   }
 }
 
@@ -87,8 +83,7 @@ body {
 @media only screen and (min-width: 1280px) {
   .container {
     width: 1280px;
-    padding-left: 100px;
-    padding-right: 100px;
+    padding: 0 100px;
   }
 }
 
