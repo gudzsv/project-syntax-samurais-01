@@ -3,17 +3,16 @@ ol {
   margin: 0;
   padding: 0;
 }
-
 .courses {
-  background-color: #121212;
+  margin-bottom: 150px;
+}
+
+.container {
+  /*background-color: #121212;
   max-width: 1440px;
   margin: 0 auto;
   padding-left: 100px;
-  padding-right: 100px;
-}
-.container {
-  max-width: 1240px;
-  margin-bottom: 150px;
+  padding-right: 100px;*/
 }
 .courses-wrapper {
   display: flex;
@@ -93,6 +92,13 @@ ol {
 }
 .svg-icon {
   display: block;
+  fill: #ffffff66;
+}
+.courses-link:hover,
+.courses-link:focus,
+.courses-link:active {
+  background-color: #bea69e;
+  fill: #ffffff;
 }
 .courses-title-item {
   max-width: 265px;
