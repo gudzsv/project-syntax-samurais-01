@@ -13,6 +13,7 @@ p:last-child {
   margin-bottom: 0;
 }
 
+ol,
 ul {
   margin: 0;
   padding: 0;
