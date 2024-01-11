@@ -1,0 +1,39 @@
+.signup-section {
+}
+.container {
+}
+.signup-title {
+  margin-bottom: 20px;
+}
+/* @media only screen and (min-width: 768px) {
+  .signup-title {
+    margin-bottom: 20px;
+  }
+} */
+.medium-title {
+}
+.text-decoration {
+}
+.signup-top-text {
+  margin-bottom: 40px;
+  color: aliceblue;
+  /* color: var(--white); */
+  font-family: DM Sans;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 18px; /* 128.571% */
+  letter-spacing: -0.28px;
+}
+.signup-form {
+}
+.signup-input {
+}
+.signup-textarea {
+}
+.signup-btn {
+}
+.form-text {
+}
+.form-policy {
+}

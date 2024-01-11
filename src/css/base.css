@@ -7,6 +7,10 @@
   --fill-linear: linear-gradient(180deg, #060707 0%, #1d1d1d 100%);
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   font-family: 'DM Sans', sans-serif;
   font-size: 16px;
@@ -43,6 +47,25 @@ body {
 @media only screen and (min-width: 1440px) {
   .container {
     max-width: 1440px;
+  }
+}
+
+/* Mobile */
+.section-mt {
+  margin-top: 80px;
+}
+
+/* Tablet */
+@media only screen and (min-width: 768px) {
+  .section-mt {
+    margin-top: 100px;
+  }
+}
+
+/* Desktop - Big Desktop */
+@media only screen and (min-width: 1280px) {
+  .section-mt {
+    margin-top: 150px;
   }
 }
 
