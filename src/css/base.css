@@ -130,6 +130,14 @@ body {
   }
 }
 
+/* Mobile - Tablet - Desktop - Big Desktop */
+.slim-title {
+  color: var(--white);
+  font-size: 28px;
+  font-weight: 500;
+  line-height: 1.14;
+}
+
 .text-decoration {
   color: var(--brown);
 }
