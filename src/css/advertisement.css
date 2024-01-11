@@ -1,0 +1,48 @@
+.marquee {
+    overflow: hidden;
+    font-family: "Pridi", sans-serif;
+    font-weight: 600;
+    font-size: 34px;
+    text-transform: uppercase;
+    background-color: transparent;
+  }
+  
+  .marquee__inner {
+    display: flex;
+  }
+  
+  .marquee__line {
+    color: var(--brown);
+    font-size: 28px;
+    font-style: normal;
+    line-height: 1.14;
+    text-transform: uppercase;
+    flex-shrink: 0;
+    margin: 0;
+    padding: 20px 0;
+    min-width: 100%;
+    white-space: nowrap;
+    animation-name: marqueeLine;
+    animation-duration: 5s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+
+  }
+  
+  .photography{
+    color: var(--white);
+    font-size: 28px;
+    font-style: normal;
+    line-height: 1.14;
+    text-transform: uppercase;
+  }
+
+  @keyframes marqueeLine {
+    from {
+      transform: translateX(0);
+    }
+    
+    to {
+      transform: translateX(-100%);
+    }
+  }
