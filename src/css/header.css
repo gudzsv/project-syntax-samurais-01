@@ -1,0 +1,135 @@
+.header {
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+.header-nav {
+  display: flex;
+  align-items: center;
+  border-radius: 12px;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  padding: 0 20px;
+}
+.header-menu,
+.header .signup-btn {
+  display: none;
+}
+.header-logo,
+.header-logo-signup,
+.header-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+.header-logo {
+  color: var(--white);
+  padding: 15px 0;
+}
+.header-logo-icon {
+  width: 127px;
+  height: 20px;
+}
+.header-logo-signup {
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  background-color: var(--fill);
+  color: #bea69e66;
+  margin-left: auto;
+  margin-right: 14px;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.header-logo-signup:hover,
+.header-logo-signup:focus,
+.header-logo-signup:active {
+  color: var(--brown);
+}
+.header-logo-icon {
+  fill: currentColor;
+}
+.header-btn {
+  width: 32px;
+  height: 22px;
+  background-color: transparent;
+  border: none;
+  color: var(--white);
+  padding: 0;
+}
+.header-btn-icon {
+  stroke: currentColor;
+}
+
+/* Tablet */
+@media only screen and (min-width: 768px) {
+  .header .container {
+    display: flex;
+  }
+  .header-nav {
+    flex-basis: 100%;
+    margin-right: 14px;
+  }
+  .header .signup-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+  }
+  .header {
+    padding-bottom: 40px;
+  }
+  .header-logo-signup {
+    display: none;
+  }
+  .header-btn {
+    margin-left: auto;
+  }
+  .header-logo {
+    padding: 20px 0;
+  }
+  .header-logo-icon {
+    width: 123px;
+    height: 16px;
+  }
+}
+
+/* Desktop */
+@media only screen and (min-width: 1280px) {
+  .header-btn {
+    display: none;
+  }
+  .header-menu {
+    display: flex;
+    gap: 28px;
+    margin-left: auto;
+  }
+  .header-menu-link {
+    display: block;
+    padding: 20px 0;
+    color: var(--white);
+    font-size: 14px;
+    line-height: 1.29;
+    text-transform: uppercase;
+    scroll-behavior: smooth;
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+      font-weight 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
+  .header-menu-link:hover,
+  .header-menu-link:focus {
+    color: var(--brown);
+    font-weight: 700;
+  }
+  .header-nav {
+    padding: 0 50px;
+    margin-right: 20px;
+  }
+  .header {
+    padding-bottom: 80px;
+  }
+}
+
+/* Big Desktop */
+@media only screen and (min-width: 1440px) {
+  .header-menu {
+    gap: 40px;
+  }
+}
