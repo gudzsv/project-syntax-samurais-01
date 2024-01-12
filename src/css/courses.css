@@ -1,26 +1,16 @@
-ol {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-}
 .courses {
-  margin-bottom: 80px;
-}
-
-@media only screen and (min-width: 375px) {
-   {
-  }
+  padding-bottom: 80px;
 }
 
 @media only screen and (min-width: 768px) {
   .courses {
-    margin-bottom: 100px;
+    padding-bottom: 100px;
   }
 }
 
 @media only screen and (min-width: 1280px) {
   .courses {
-    margin-bottom: 150px;
+    padding-bottom: 150px;
   }
 }
 
@@ -37,64 +27,21 @@ ol {
 }
 
 .courses-title {
-  color: #fff;
-  font-size: 28px;
-  font-style: normal;
-  font-weight: 500;
-  line-height: 1.14;
-  letter-spacing: -0.04em;
   margin-bottom: 20px;
-}
-
-@media only screen and (min-width: 768px) {
-  .courses-title {
-    color: #fff;
-    font-size: 48px;
-    font-style: normal;
-    font-weight: 500;
-    line-height: 1.12;
-    letter-spacing: -0.04em;
-  }
-}
-
-.courses-title-span {
-  color: #bea69e;
-  font-size: 28px;
-  font-style: normal;
-  font-weight: 500;
-  line-height: 1.14;
-  letter-spacing: -0.04em;
-}
-
-@media only screen and (min-width: 768px) {
-  .courses-title-span {
-    color: #bea69e;
-    font-size: 48px;
-    font-style: normal;
-    font-weight: 500;
-    line-height: 54px;
-    letter-spacing: -1.92px;
-  }
 }
 
 .courses-text {
   max-width: 335px;
-  color: #fff;
+  color: var(--white);
   font-size: 14px;
-  font-style: normal;
-  font-weight: 400;
   line-height: 1.29;
-  letter-spacing: -0.02em;
 }
 
 @media only screen and (min-width: 768px) {
   .courses-text {
     max-width: 381px;
     font-size: 16px;
-    color: #fff;
-    font-style: normal;
     line-height: 1.25;
-    letter-spacing: -0.32px;
   }
 }
 
@@ -111,11 +58,7 @@ ol {
 }
 .courses-list {
   width: 100%;
-}
-
-@media only screen and (min-width: 375px) {
-   {
-  }
+  counter-reset: my-numbers 0;
 }
 
 @media only screen and (min-width: 768px) {
@@ -133,26 +76,18 @@ ol {
   }
 }
 .courses-item {
+  position: relative;
   width: 100%;
-  /*height: 398px;*/
-  /*flex-shrink: 0;*/
   padding: 28px;
   margin-bottom: 20px;
   border-radius: 12px;
   border: 1px solid rgba(255, 255, 255, 0.2);
-  background: linear-gradient(180deg, #060707 0%, #1d1d1d 100%);
-}
-@media only screen and (min-width: 375px) {
-   {
-  }
+  background: var(--fill-linear);
 }
 
 @media only screen and (min-width: 768px) {
   .courses-item {
     max-width: 342px;
-    /*height: 398px;*/
-    flex-shrink: 0;
-    /*max-width: calc(100% - 1 * 20px) / 2;*/
     padding: 32px;
     margin-bottom: 0;
   }
@@ -161,59 +96,59 @@ ol {
 @media only screen and (min-width: 1280px) {
   .courses-item {
     max-width: 347px;
-    /*height: 452px;*/
-    /*flex-shrink: 0;
-    width: calc(100% - 2 * 20px) / 3;*/
   }
 }
 
 @media only screen and (min-width: 1440px) {
   .courses-item {
     max-width: 400px;
-    /*height: 452px;*/
-    /*flex-shrink: 0;
-    width: calc(100% - 2 * 20px) / 3;*/
   }
 }
+
+.courses-item::before {
+  position: absolute;
+  top: 28px;
+  left: 28px;
+  width: 18px;
+  height: 18px;
+  text-align: center;
+  content: '0' counter(my-numbers);
+  counter-increment: my-numbers;
+  color: rgba(255, 255, 255, 0.4);
+  font-size: 14px;
+  line-height: 1.29;
+}
+
+@media only screen and (min-width: 768px) {
+  .courses-item::before {
+    top: 32px;
+    left: 32px;
+  }
+}
+
 .courses-item:last-child {
   margin-bottom: 0;
 }
 
 .courses-link-wrapper {
+  width: 100%;
   display: flex;
-  justify-content: space-between;
+  justify-content: flex-end;
   align-items: center;
   margin-bottom: 28px;
-  width: 100%;
-}
-@media only screen and (min-width: 375px) {
-   {
-  }
 }
 
 @media only screen and (min-width: 768px) {
   .courses-link-wrapper {
     margin-bottom: 32px;
-    width: 100%;
   }
-}
-
-.courses-item-number {
-  color: rgba(255, 255, 255, 0.4);
-  font-size: 14px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: 1.29;
-  letter-spacing: -0.28px;
-  width: 18px;
-  height: 18px;
 }
 
 .courses-link {
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: #1d1d1d;
+  background-color: var(--fill);
   border-radius: 50%;
   width: 32px;
   height: 32px;
@@ -224,25 +159,21 @@ ol {
   display: block;
 }
 
-.courses-link:hover,
-.courses-link:focus,
 .courses-link:active {
-  background-color: #bea69e;
-  stroke: #ffffff;
+  background-color: var(--brown);
+  stroke: var(--white);
+}
+
+@media only screen and (min-width: 1280px) {
+  .courses-link:hover,
+  .courses-link:focus {
+    background-color: var(--brown);
+    stroke: var(--white);
+  }
 }
 .courses-title-item {
   max-width: 279px;
-  color: #fff;
-  font-size: 28px;
-  font-style: normal;
-  font-weight: 500;
-  line-height: 1.14;
   margin-bottom: 164px;
-}
-
-@media only screen and (min-width: 375px) {
-   {
-  }
 }
 
 @media only screen and (min-width: 768px) {
@@ -260,23 +191,13 @@ ol {
 .courses-text-item {
   color: rgba(255, 255, 255, 0.5);
   font-size: 14px;
-  font-style: normal;
-  font-weight: 400;
   line-height: 1.29;
-  letter-spacing: -0.02em;
-}
-
-@media only screen and (min-width: 375px) {
-   {
-  }
 }
 
 @media only screen and (min-width: 768px) {
   .courses-text-item {
     font-size: 16px;
     color: rgba(255, 255, 255, 0.5);
-    font-style: normal;
     line-height: 1.25;
-    letter-spacing: -0.02em;
   }
 }
