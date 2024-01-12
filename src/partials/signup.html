@@ -1,40 +1,60 @@
 <section id="signup" class="signup-section section-mt">
-  <div class="container">
-    <h2 class="signup-title medium-title">
-      Sign
-      <span class="text-decoration">Up</span>
-    </h2>
-    <p class="signup-top-text">
-      Please use the form below to contact us. Enter your name, email, and
-      message and we'll get back to you shortly.
-    </p>
-    <form class="signup-form">
-      <input
-        class="signup-input"
-        name="name"
-        type="text"
-        placeholder="Enter your name"
-      />
-      <input
-        class="signup-input"
-        name="email"
-        type="email"
-        placeholder="Enter your email"
-      />
-      <textarea
-        class="signup-input signup-textarea"
-        name="message"
-        id=""
-        cols="30"
-        rows="10"
-        placeholder="Message"
-      ></textarea>
-      <button class="signup-btn" type="submit">Send</button>
-      <p class="form-text">
-        By clicking on “Send” button, you agree to our
-        <a href="" class="form-policy">Privacy Policy</a>, and allow Promodo to
-        use this information for marketing purposes.
+  <div class="signup-container container">
+    <div class="signup-content">
+      <h2 class="signup-title medium-title">
+        Sign
+        <span class="text-decoration">Up</span>
+      </h2>
+      <p class="signup-top-text">
+        Please use the form below to contact us. Enter your name, email, and
+        message and we'll get back to you shortly.
       </p>
-    </form>
+      <form class="signup-form">
+        <input
+          class="signup-input"
+          name="name"
+          type="text"
+          placeholder="Enter your name"
+        />
+        <input
+          class="signup-input"
+          name="email"
+          type="email"
+          pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$"
+          placeholder="Enter your email"
+        />
+        <textarea
+          class="signup-input signup-textarea"
+          name="message"
+          placeholder="Message"
+        ></textarea>
+        <button class="signup-form-btn" type="submit">Send</button>
+        <p class="form-text">
+          By clicking on “Send” button, you agree to our
+          <a href="#policy" class="form-policy">Privacy Policy</a>,<br />
+          and allow Promodo to use this information for marketing purposes.
+        </p>
+      </form>
+    </div>
+    <ul class="signup-img-list">
+      <li class="signup-img-item">
+        <picture class="signup-img-container">
+          <sourse></sourse>
+          <sourse></sourse>
+          <sourse></sourse>
+          <sourse></sourse>
+          <img src="" alt="" />
+        </picture>
+      </li>
+      <li class="signup-img-item">
+        <picture class="signup-img-container">
+          <sourse></sourse>
+          <sourse></sourse>
+          <sourse></sourse>
+          <sourse></sourse>
+          <img src="" alt="" />
+        </picture>
+      </li>
+    </ul>
   </div>
 </section>
