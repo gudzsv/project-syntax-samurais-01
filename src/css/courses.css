@@ -96,7 +96,7 @@
   width: 18px;
   height: 18px;
   text-align: center;
-  content: '0' counter(my-numbers);
+  content: counter(my-numbers, decimal-leading-zero);
   counter-increment: my-numbers;
   color: rgba(255, 255, 255, 0.4);
   font-size: 14px;
