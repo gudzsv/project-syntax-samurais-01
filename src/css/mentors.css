@@ -59,6 +59,10 @@
     padding-bottom: 40px;
 }
 
+.mentors-img {
+    padding-bottom: 16px;
+}
+
 /* Tablet styles */
 @media screen and (min-width: 768px) {
     .mentors-list {
@@ -96,5 +100,8 @@
         justify-content: space-between;
         margin-bottom: 50px;
     }
+
+    .mentors-list-items {
+        padding-left: 100px;
+    }
 }
-    
