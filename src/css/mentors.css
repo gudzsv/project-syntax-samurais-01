@@ -55,6 +55,10 @@
     display: block;
 }
 
+.mentors-list-items {
+    padding-bottom: 40px;
+}
+
 /* Tablet styles */
 @media screen and (min-width: 768px) {
     .mentors-list {
