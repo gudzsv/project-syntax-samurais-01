@@ -20,7 +20,7 @@
     />
     
     <script type="module" crossorigin src="/project-syntax-samurais-01/commonHelpers.js"></script>
-    <link rel="stylesheet" href="/project-syntax-samurais-01/assets/index-f79b41de.css">
+    <link rel="stylesheet" href="/project-syntax-samurais-01/assets/index-3fc28c79.css">
   </head>
   <body>
     <div class="header-hero-container">
@@ -504,18 +504,18 @@
     </main>
 
     <!-- Loads the specified .html file -->
-    <footer class="footer">
+    <footer class="footer section-mt">
   <div class="container foot">
     <div class="footer-interaction">
       <div class="footer-address">
         <a class="foot-logo" href="./index.html">
-          <svg class="foot-logo-icon">
+          <svg class="foot-logo-icon" width="123" height="16">
             <use href="/project-syntax-samurais-01/assets/icons-b65078ff.svg#icon-logo"></use>
           </svg>
         </a>
         <address class="footer-contacts" id="footer-contacts">
           <ul class="foot-contacts">
-            <li>
+            <li class="foot-contacts-elem">
               <a class="foot-cont-tel" href="tel:+380665438912">
                 UK: +38 066 543 8912
               </a>
@@ -575,10 +575,11 @@
         </ul>
       </div>
       <form class="footer-form" name="footer-subscribe">
-        <label class="footer-label">
+        <label class="footer-label" for="email">
           <input
             class="footer-input"
             type="email"
+            id="email"
             name="email"
             placeholder="Enter your email"
             pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$"
@@ -589,13 +590,17 @@
       </form>
     </div>
     <div class="footer-safety">
-      <p class="foot-privacy">
-        Privacy Policy<br />
-        Public Offering Agreement
-      </p>
+      <ul class="foot-privacy-list">
+        <li class="foot-privacy-item">
+          <a class="foot-privacy-polisy" href="">Privacy Policy</a>
+        </li>
+        <li class="foot-privacy-item">
+          <a class="foot-public-offer" href="">Public Offering Agreement</a>
+        </li>
+      </ul>
       <p class="foot-copyright">
         2023 Focus Frame<br />
-        &copy;All rights reserved
+        <a class="foot-copyright-link" href="">&copy;All rights reserved</a>
       </p>
     </div>
   </div>
