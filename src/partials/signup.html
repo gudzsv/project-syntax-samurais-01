@@ -1,40 +1,94 @@
 <section id="signup" class="signup-section section-mt">
-  <div class="container">
-    <h2 class="signup-title medium-title">
-      Sign
-      <span class="text-decoration">Up</span>
-    </h2>
-    <p class="signup-top-text">
-      Please use the form below to contact us. Enter your name, email, and
-      message and we'll get back to you shortly.
-    </p>
-    <form class="signup-form">
-      <input
-        class="signup-input"
-        name="name"
-        type="text"
-        placeholder="Enter your name"
-      />
-      <input
-        class="signup-input"
-        name="email"
-        type="email"
-        placeholder="Enter your email"
-      />
-      <textarea
-        class="signup-input signup-textarea"
-        name="message"
-        id=""
-        cols="30"
-        rows="10"
-        placeholder="Message"
-      ></textarea>
-      <button class="signup-btn" type="submit">Send</button>
-      <p class="form-text">
-        By clicking on “Send” button, you agree to our
-        <a href="" class="form-policy">Privacy Policy</a>, and allow Promodo to
-        use this information for marketing purposes.
+  <div class="signup-container container">
+    <div class="signup-content">
+      <h2 class="signup-title medium-title">
+        Sign
+        <span class="text-decoration">Up</span>
+      </h2>
+      <p class="signup-top-text">
+        Please use the form below to contact us. Enter your name, email, and
+        message and we'll get back to you shortly.
       </p>
-    </form>
+      <form class="signup-form">
+        <input
+          class="signup-input"
+          name="name"
+          type="text"
+          placeholder="Enter your name"
+          pattern="[a-zA-Zа-яА-Я]{2,}$"
+          title="The Name shuld be longer than 2 characters"
+          required
+        />
+        <input
+          class="signup-input"
+          name="email"
+          type="email"
+          placeholder="Enter your email"
+          pattern="^\S+@\S+\.\S+$"
+          title="Email should be like this: example@mail.com"
+          required
+        />
+        <textarea
+          class="signup-input signup-textarea"
+          name="message"
+          title="Please enter your message here"
+          minlength="10"
+          placeholder="Message"
+          required
+        ></textarea>
+        <button class="signup-form-btn" type="submit">Send</button>
+        <p class="form-text">
+          By clicking on “Send” button, you agree to our
+          <a href="#policy" class="form-policy">Privacy Policy</a>,<br />
+          and allow Promodo to use this information for marketing purposes.
+        </p>
+      </form>
+    </div>
+    <ul class="signup-img-list">
+      <li class="signup-lens-item">
+        <picture class="signup-lens-wrapper">
+          <sourse
+            media="(min-width: 1440px)"
+            srcset="./img/signup/isabella-mendes-lRgkUlxJCkA-unsplash1_big_desktop@1x.png 1x, ./img/signup/isabella-mendes-lRgkUlxJCkA-unsplash1_big_desktop@2x.png 2x"
+            width="163"
+          />
+          <sourse
+            media="(min-width: 1280px)"
+            srcset="./img/signup/isabella-mendes-lRgkUlxJCkA-unsplash1_desktop@1x.png 1x, ./img/signup/isabella-mendes-lRgkUlxJCkA-unsplash1_desktop@2x.png 2x"
+            width="150"
+          />
+          <img
+            class="signup-img-lens"
+            src="./img/signup/isabella-mendes-lRgkUlxJCkA-unsplash1_big_desktop@1x.png"
+            srcset="
+              ./img/signup/isabella-mendes-lRgkUlxJCkA-unsplash1_big_desktop@2x.png 2x
+            "
+            alt="camera lens"
+            loading="lazy"
+          />
+        </picture>
+      </li>
+      <li class="signup-camera-item">
+        <picture class="signup-camera-wrapper">
+          <sourse
+            media="(min-width: 1440px)"
+            srcset="./img/signup/video-entry-product1_big_desktop@1x.png 1x, ./img/signup/video-entry-product1_big_desktop@2x.png 2x"
+            width="254"
+          />
+          <sourse
+            media="(min-width: 1280px)"
+            srcset="./img/signup/video-entry-product1_desktop@1x.png 1x, ./img/signup/video-entry-product1_desktop@2x.png 2x"
+            width="240"
+          />
+          <img
+            class="signup-img-camera"
+            src="./img/signup/video-entry-product1_big_desktop@1x.png"
+            srcset="./img/signup/video-entry-product1_big_desktop@2x.png 2x"
+            alt="Nikon camera"
+            loading="lazy"
+          />
+        </picture>
+      </li>
+    </ul>
   </div>
 </section>
