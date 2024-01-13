@@ -15,18 +15,26 @@
           name="name"
           type="text"
           placeholder="Enter your name"
+          pattern="[a-zA-Zа-яА-Я]{2,}$"
+          title="The Name shuld be longer than 2 characters"
+          required
         />
         <input
           class="signup-input"
           name="email"
           type="email"
-          pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$"
           placeholder="Enter your email"
+          pattern="^\S+@\S+\.\S+$"
+          title="Email should be like this: example@mail.com"
+          required
         />
         <textarea
           class="signup-input signup-textarea"
           name="message"
+          title="Please enter your message here"
+          minlength="10"
           placeholder="Message"
+          required
         ></textarea>
         <button class="signup-form-btn" type="submit">Send</button>
         <p class="form-text">

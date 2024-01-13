@@ -1,10 +1,3 @@
-.signup-section {
-}
-.container {
-}
-.signup-content {
-}
-
 @media only screen and (min-width: 768px) {
   .signup-content {
     max-width: 480px;
@@ -14,15 +7,7 @@
 .signup-title {
   margin-bottom: 20px;
 }
-/* @media only screen and (min-width: 768px) {
-  .signup-title {
-    margin-bottom: 20px;
-  }
-} */
-.medium-title {
-}
-.text-decoration {
-}
+
 .signup-top-text {
   display: block;
   max-width: 295px;
@@ -41,14 +26,6 @@
   }
 }
 
-.signup-form {
-}
-
-/* @media only screen and (min-width: 768px) {
-  .signup-form {
-    max-width: 480px;
-  }
-} */
 .signup-input {
   display: block;
   width: 100%;
@@ -93,6 +70,7 @@
     margin-top: 14px;
   }
 }
+
 .signup-textarea {
   min-height: 112px;
   resize: none;
@@ -154,7 +132,6 @@
   color: var(--gray-light);
   font-size: 12px;
   line-height: 1.33;
-  text-align: start;
 }
 
 @media only screen and (min-width: 768px) {
@@ -182,6 +159,10 @@
   }
 }
 
+.signup-img-list {
+  display: none;
+}
+
 @media only screen and (min-width: 1280px) {
   .signup-img-list {
     display: flex;
@@ -190,8 +171,6 @@
   }
 }
 
-.signup-img-list {
-}
 @media only screen and (min-width: 1280px) {
   .signup-lens-item {
     margin-top: auto;
@@ -203,26 +182,42 @@
     display: block;
     position: relative;
     padding: 0 19px;
-    width: 180px;
-    height: 288px;
+    min-width: 180px;
+    min-height: 288px;
     border-radius: 1000px;
-    background: #bea69e;
+    background: var(--brown);
   }
 }
-.signup-img-lens {
-  position: absolute;
-  top: 50%;
-  left: 35%;
-  transform: translate(-50%, -45%);
+
+@media only screen and (min-width: 1440px) {
+  .signup-lens-wrapper {
+    min-width: 190px;
+  }
 }
-.signup-camera-item {
+
+@media only screen and (min-width: 1280px) {
+  .signup-img-lens {
+    position: absolute;
+    top: 55%;
+    left: 35%;
+    transform: translate(-50%, -45%);
+  }
 }
-.signup-camera-wrapper {
-  display: block;
-  width: 340px;
-  height: 540px;
-  border-radius: 1000px;
-  background: #1d1d1d;
+
+@media only screen and (min-width: 1280px) {
+  .signup-camera-wrapper {
+    display: block;
+    padding: 156px 50px 88px 50px;
+    min-width: 340px;
+    min-height: 540px;
+    border-radius: 1000px;
+    background-color: var(--fill);
+  }
 }
-.signup-img-camera {
+
+@media only screen and (min-width: 1440px) {
+  .signup-camera-wrapper {
+    min-width: 350px;
+    padding: 139px 48px 88px 48px;
+  }
 }
