@@ -1,4 +1,4 @@
-.reviews {
+/*.reviews {
   background-color: #121212;
   padding: 80px 20px;
 }
@@ -13,7 +13,7 @@
   .reviews {
     padding: 150px 100px;
   }
-}
+}*/
 
 .reviews-title {
   color: #fff;
@@ -111,6 +111,17 @@
     line-height: 18px;
     letter-spacing: -0.28px;
   }
+}
+.star-list {
+  display: flex;
+  align-items: center;
+}
+
+.star-item {
+  padding: 2px;
+  /*border: 1.5px solid #bea69e;*/
+}
+.stars {
 }
 .reviews-text {
   max-width: 295px;
