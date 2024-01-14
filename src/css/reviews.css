@@ -146,7 +146,7 @@
 }
 .reviews-text {
   max-width: 295px;
-  height: 108px;
+  /*height: 108px;*/
   color: #fff;
   font-family: DM Sans;
   font-size: 14px;
@@ -159,7 +159,7 @@
 @media only screen and (min-width: 768px) {
   .reviews-text {
     max-width: 600px;
-    height: 80px;
+    /*height: 80px;*/
     font-size: 16px;
     line-height: 20px;
     letter-spacing: -0.32px;
