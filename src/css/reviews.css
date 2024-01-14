@@ -73,6 +73,7 @@
   }
   .reviews-item {
     width: calc((100% - 20px * 1) / 2);
+    min-height: 216px;
   }
   .reviews-item-title.girl {
     max-width: 152px;
