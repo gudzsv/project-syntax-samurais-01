@@ -9,6 +9,7 @@
     font-weight: 500;
     line-height: 32px;
     letter-spacing: -1.12px;
+    margin-bottom: 40px;
 }
 
 .mentors-title-two {
@@ -49,12 +50,12 @@
     display: block;
 }
 
-.mentors-list-items {
-    padding-top: 40px;
-}
-
 .mentors-img {
     padding-bottom: 16px;
+}
+
+.mentors-list-items+.mentors-list-items {
+    margin-top: 40px;
 }
 
 /* Tablet styles */
@@ -72,6 +73,7 @@
         font-size: 48px;
         line-height: 54px; 
         letter-spacing: -1.92px;
+        margin-bottom: 50px;
     }
 
     .mentors-title-two {
@@ -85,14 +87,11 @@
         line-height: 32px;
     }
 
-    .mentors-list-+.mentors-list-items {
+    .mentors-list-items+.mentors-list-items {
         margin-top: 0;
     }
 
     .mentors-list {
-        margin-left: auto; 
-        margin-right: auto; 
-        padding-top: 50px;
         display: flex;
         flex-wrap: wrap;
         gap: 93px 100px;
@@ -103,10 +102,9 @@
 
 
 /* Desktop styles */
-@media screen and (min-width: 1024px) {
+@media screen and (min-width: 1280px) {
     .mentors-list {
-        display: flex;
-        justify-content: space-between;
+        gap: 100px;
         /* padding-top: 50px; */
     }
 
