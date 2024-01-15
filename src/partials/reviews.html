@@ -4,13 +4,28 @@
     <ul class="reviews-list">
       <li class="reviews-item men">
         <div class="reviews-item-main">
-          <img
-            class="reviews-photo"
-            srcset="./img/reviews/user@1x.png 1x, ./img/reviews/user@2x.png 2x"
-            src="./img/reviews/user@1x.png"
-            alt="men"
-            loading="lazy"
-          />
+          <picture>
+            <source
+              type="image/webp"
+              srcset="
+                ./img/reviews/user@1x.webp 1x,
+                ./img/reviews/user@2x.webp 2x
+              "
+            />
+            <source
+              type="image/png"
+              srcset="
+                ./img/reviews/user@1x.png 1x,
+                ./img/reviews/user@2x.png 2x
+              "
+            />
+            <img
+              class="reviews-photo"
+              src="./img/reviews/user@1x.png"
+              alt="men"
+              loading="lazy"
+            />
+          </picture>
           <div class="reviews-item-block-text">
             <h3 class="reviews-item-title men">Abraham Baker</h3>
             <span class="reviews-item-role">Student</span>
@@ -55,16 +70,28 @@
 
       <li class="reviews-item girl">
         <div class="reviews-item-main">
-          <img
-            class="reviews-photo"
-            srcset="
-              ./img/reviews/user1@1x.png 1x,
-              ./img/reviews/user1@2x.png 2x
-            "
-            src="./img/reviews/user1@1x.png"
-            alt="girl"
-            loading="lazy"
-          />
+          <picture>
+            <source
+              type="image/webp"
+              srcset="
+                ./img/reviews/user1@1x.webp 1x,
+                ./img/reviews/user1@2x.webp 2x
+              "
+            />
+            <source
+              type="image/png"
+              srcset="
+                ./img/reviews/user1@1x.png 1x,
+                ./img/reviews/user1@2x.png 2x
+              "
+            />
+            <img
+              class="reviews-photo"
+              src="./img/reviews/user1@1x.pn"
+              alt="girl"
+              loading="lazy"
+            />
+          </picture>
           <div class="reviews-item-block-text">
             <h3 class="reviews-item-title girl">Amanda Lowery</h3>
             <span class="reviews-item-role">Student</span>
