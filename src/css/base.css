@@ -54,20 +54,20 @@ body {
 
 /* Mobile */
 .section-mt {
-  margin-top: 80px;
+  padding-top: 80px;
 }
 
 /* Tablet */
 @media only screen and (min-width: 768px) {
   .section-mt {
-    margin-top: 100px;
+    padding-top: 100px;
   }
 }
 
 /* Desktop - Big Desktop */
 @media only screen and (min-width: 1280px) {
   .section-mt {
-    margin-top: 150px;
+    padding-top: 150px;
   }
 }
 
