@@ -13,6 +13,7 @@
   .hero-content {
     padding-left: 32px;
     padding-top: 64px;
+    padding-right: 0;
   }
 }
 
