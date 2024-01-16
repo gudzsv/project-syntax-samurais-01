@@ -1,6 +1,6 @@
 @font-face {
   font-family: 'DM Sans';
-  src: url(../font/DMSans-Regular.woff);
+  src: url('../font/DMSans-Regular.woff');
   font-weight: 400;
   font-style: normal;
   font-display: swap;
@@ -8,7 +8,7 @@
 
 @font-face {
   font-family: 'DM Sans Italic';
-  src: url(../font/DMSans-Italic.woff);
+  src: url('../font/DMSans-Italic.woff');
   font-weight: 400;
   font-style: normal;
   font-display: swap;
