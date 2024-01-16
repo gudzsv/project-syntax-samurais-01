@@ -1,6 +1,7 @@
-.section-mt.review {
+review {
   padding-bottom: 80px;
 }
+
 .reviews-title {
   color: var(--white);
   font-family: DM Sans;
@@ -31,6 +32,7 @@
   justify-content: center;
   gap: 20px;
 }
+
 .reviews-item {
   border-radius: 12px;
   border: 1px solid var(--gray);
@@ -42,7 +44,7 @@
 }
 
 @media only screen and (min-width: 768px) {
-  .section-mt.review {
+  .review {
     padding-bottom: 100px;
   }
 
@@ -53,25 +55,29 @@
   .reviews-item-main {
     margin-bottom: 20px;
   }
+  
   .review-star-container {
     position: absolute;
     top: 20px;
     right: 20px;
   }
 }
+
 @media only screen and (min-width: 1280px) {
-  .section-mt.review {
+  .review {
     padding-bottom: 150px;
   }
 
   .reviews-item.girl {
     display: block;
   }
+  
   .reviews-item {
     width: calc((100% - 20px * 1) / 2);
     min-height: 216px;
     gap: 20px;
   }
+  
   .reviews-item-title.girl {
     max-width: 152px;
   }
@@ -84,6 +90,7 @@
 .reviews-photo {
   margin-right: 10px;
 }
+
 .reviews-item-title {
   max-width: 145px;
   margin-bottom: 4px;
@@ -94,6 +101,7 @@
   font-weight: 500;
   line-height: 24px;
 }
+
 @media only screen and (min-width: 768px) {
   .reviews-item-title {
     height: 28px;
@@ -127,6 +135,7 @@
   margin-left: 66px;
   margin-bottom: 20px;
 }
+
 .star-list {
   display: flex;
   align-items: center;
@@ -135,12 +144,15 @@
 .star-item {
   padding: 2px;
 }
+
 .star {
   fill: var(--brown);
 }
+
 .star.dark {
   fill: var(--dark);
 }
+
 .reviews-text {
   max-width: 295px;
   /*height: 108px;*/
