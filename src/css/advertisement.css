@@ -1,36 +1,34 @@
 .marquee {
-    border-block: 1px solid var(--gray);
-    overflow: hidden;
-    background-color: transparent;
-  }
-  
-  .marquee-inner {
-    display: flex;
-  }
-  
-  .marquee-line {
-    color: var(--brown);
-    font-size: 28px;
-    line-height: 1.14;
-    letter-spacing: 0.02em;
-    text-transform: uppercase;
-    flex-shrink: 0;
-    padding-block: 20px;
-    min-width: 100%;
-    white-space: nowrap;
-    animation-name: marqueeLine;
-    animation-duration: 10s;
-    animation-timing-function: linear;
-    animation-iteration-count: infinite;
+  border-block: 1px solid var(--gray);
+  overflow: hidden;
+  background-color: transparent;
+}
 
-  }
-  
+.marquee-inner {
+  display: flex;
+}
+
+.marquee-line {
+  color: var(--brown);
+  font-size: 28px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+  text-transform: uppercase;
+  flex-shrink: 0;
+  padding-block: 20px;
+  min-width: 100%;
+  white-space: nowrap;
+  animation-name: marqueeLine;
+  animation-duration: 10s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+}
+
 @media only screen and (min-width: 768px) {
   .marquee-line {
     padding-block: 24px;
     font-size: 40px;
     line-height: 1.25;
-    
   }
 }
 
@@ -40,16 +38,16 @@
     line-height: 1.08;
   }
 }
-  .photography{
-    color: var(--white);
+.photography {
+  color: var(--white);
+}
+
+@keyframes marqueeLine {
+  from {
+    transform: translateX(0);
   }
 
-  @keyframes marqueeLine {
-    from {
-      transform: translateX(0);
-    }
-    
-    to {
-      transform: translateX(-100%);
-    }
+  to {
+    transform: translateX(-100%);
   }
+}
