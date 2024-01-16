@@ -5,37 +5,38 @@
 
 .hero-content {
   padding-left: 20px;
+  padding-right: 20px;
+  padding-top: 40px;
 }
 
 @media only screen and (min-width: 768px) {
   .hero-content {
     padding-left: 32px;
+    padding-top: 64px;
   }
 }
 
 @media only screen and (min-width: 1280px) {
   .hero-content {
     padding-left: 50px;
+    padding-top: 80px;
   }
 }
 
 .hero-title {
   max-width: 295px;
-  padding-top: 40px;
   margin-bottom: 20px;
 }
 
 @media only screen and (min-width: 768px) {
   .hero-title {
     max-width: 517px;
-    padding-top: 64px;
   }
 }
 
 @media only screen and (min-width: 1280px) {
   .hero-title {
     max-width: 563px;
-    padding-top: 80px;
   }
 }
 
