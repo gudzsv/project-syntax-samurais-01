@@ -63,11 +63,8 @@
 
 .hero-block {
   display: inline-flex;
-  justify-content: center;
   align-items: flex-start;
-}
-.hero-users {
-  margin-right: 40px;
+  gap: 40px;
 }
 @media only screen and (min-width: 768px) {
   .hero-users {
