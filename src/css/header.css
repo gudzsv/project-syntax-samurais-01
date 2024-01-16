@@ -7,6 +7,7 @@
   background-position: center;
   padding-bottom: 80px;
 }
+
 @media (min-resolution: 192dpi) {
   .header-hero-container {
     background-image: url(../img/header/background/graphic_mobile@2x.png);
@@ -19,6 +20,7 @@
     padding-bottom: 100px;
   }
 }
+
 @media only screen and (min-width: 768px) and (min-resolution: 192dpi) {
   .header-hero-container {
     background-image: url(../img/header/background/graphic_tablet@2x.png);
@@ -32,6 +34,7 @@
     padding-bottom: 150px;
   }
 }
+
 @media only screen and (min-width: 1280px) and (min-resolution: 192dpi) {
   .header-hero-container {
     background-image: url(../img/header/background/graphic_desktop@2x.png);
@@ -44,6 +47,7 @@
     background-image: url(../img/header/background/graphic_big_desktop@1x.png);
   }
 }
+
 @media only screen and (min-width: 1440px) and (min-resolution: 192dpi) {
   .header-hero-container {
     background-image: url(../img/header/background/graphic_big_desktop@2x.png);
@@ -51,11 +55,11 @@
 }
 
 /* Header */
-
 .header {
   padding-top: 20px;
   padding-bottom: 20px;
 }
+
 .header-nav {
   display: flex;
   align-items: center;
@@ -64,10 +68,12 @@
   padding: 0 20px;
   background-color: var(--black);
 }
+
 .header-menu,
 .header .signup-btn {
   display: none;
 }
+
 .header-logo,
 .header-logo-signup,
 .header-btn {
@@ -76,24 +82,29 @@
   justify-content: center;
   flex-shrink: 0;
 }
+
 .header-logo {
   color: var(--white);
   padding: 15px 0;
   width: 127px;
 }
+
 .header-logo:hover > .header-logo-icon,
 .header-logo:focus > .header-logo-icon {
   transform: scale(1.05);
 }
+
 .header-logo-icon,
 .header-signup-icon {
   fill: currentColor;
 }
+
 .header-logo-icon {
   width: 100%;
   transition: transform 300ms cubic-bezier(0.4, 0, 0.2, 1);
   transform-origin: left center;
 }
+
 .header-logo-signup {
   width: 32px;
   height: 32px;
@@ -104,11 +115,13 @@
   margin-right: 14px;
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
+
 .header-logo-signup:hover,
 .header-logo-signup:focus,
 .header-logo-signup:active {
   color: var(--brown);
 }
+
 .header-btn {
   width: 32px;
   height: 22px;
@@ -117,6 +130,7 @@
   color: var(--white);
   padding: 0;
 }
+
 .header-btn-icon {
   stroke: currentColor;
   width: 100%;
@@ -129,27 +143,33 @@
   .header .container {
     display: flex;
   }
+  
   .header-nav {
     flex-basis: 100%;
     margin-right: 14px;
   }
+  
   .header .signup-btn {
     display: flex;
     align-items: center;
     justify-content: center;
     flex-shrink: 0;
   }
+  
   .header {
     padding-bottom: 40px;
   }
+  
   .header-logo-signup {
     display: none;
   }
+  
   .header-btn {
     margin-left: auto;
     width: 40px;
     height: 28px;
   }
+  
   .header-logo {
     width: 123px;
     padding: 20px 0;
@@ -162,11 +182,13 @@
   .header-btn {
     display: none;
   }
+  
   .header-menu {
     display: flex;
     gap: 28px;
     margin-left: auto;
   }
+  
   .header-menu-link {
     display: block;
     padding: 20px 0;
@@ -178,15 +200,18 @@
     transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1),
       font-weight 250ms cubic-bezier(0.4, 0, 0.2, 1);
   }
+  
   .header-menu-link:hover,
   .header-menu-link:focus {
     color: var(--brown);
     font-weight: 700;
   }
+  
   .header-nav {
     padding: 0 50px;
     margin-right: 20px;
   }
+  
   .header {
     padding-bottom: 80px;
   }
@@ -216,6 +241,7 @@
   transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1),
     visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
+
 .backdrop.is-open {
   opacity: 1;
   visibility: visible;
@@ -249,10 +275,12 @@
   transition: transform 500ms cubic-bezier(0.4, 0, 0.2, 1),
     visibility 500ms cubic-bezier(0.4, 0, 0.2, 1);
 }
+
 .mobile-menu.is-open {
   transform: translateX(0);
   visibility: visible;
 }
+
 .menu-btn {
   position: absolute;
   top: 20px;
@@ -268,11 +296,13 @@
   border: none;
   background-color: transparent;
 }
+
 .menu-btn-icon {
   stroke: currentColor;
   width: 100%;
   height: 100%;
 }
+
 .mobile-menu-link {
   display: block;
   color: var(--black);
@@ -282,9 +312,11 @@
   scroll-behavior: smooth;
   transition: font-weight 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
+
 .mobile-menu-nav > .mobile-menu-item:not(:last-child) > .mobile-menu-link {
   padding-bottom: 20px;
 }
+
 .mobile-menu-link:hover,
 .mobile-menu-link:focus,
 .mobile-menu-link:active,
@@ -307,9 +339,11 @@
       url(../img/header/menu/header_menu_cam_tablet@2x.jpg) 2x
     );
   }
+  
   .mobile-menu-nav > .mobile-menu-item:not(:last-child) > .mobile-menu-link {
     padding-bottom: 28px;
   }
+  
   .menu-btn {
     width: 40px;
     height: 40px;
