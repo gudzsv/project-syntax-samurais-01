@@ -1,7 +1,7 @@
 /* Header-Hero-container  */
 
 .header-hero-container {
-  background-image: url(../img/header/background/graphic_mobile@1x.png);
+  background-image: url('../img/header/background/graphic_mobile@1x.png');
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -10,47 +10,47 @@
 
 @media (min-resolution: 192dpi) {
   .header-hero-container {
-    background-image: url(../img/header/background/graphic_mobile@2x.png);
+    background-image: url('../img/header/background/graphic_mobile@2x.png');
   }
 }
 /* Tablet */
 @media only screen and (min-width: 768px) {
   .header-hero-container {
-    background-image: url(../img/header/background/graphic_tablet@1x.png);
+    background-image: url('../img/header/background/graphic_tablet@1x.png');
     padding-bottom: 100px;
   }
 }
 
 @media only screen and (min-width: 768px) and (min-resolution: 192dpi) {
   .header-hero-container {
-    background-image: url(../img/header/background/graphic_tablet@2x.png);
+    background-image: url('../img/header/background/graphic_tablet@2x.png');
   }
 }
 
 /* Desktop */
 @media only screen and (min-width: 1280px) {
   .header-hero-container {
-    background-image: url(../img/header/background/graphic_desktop@1x.png);
+    background-image: url('../img/header/background/graphic_desktop@1x.png');
     padding-bottom: 150px;
   }
 }
 
 @media only screen and (min-width: 1280px) and (min-resolution: 192dpi) {
   .header-hero-container {
-    background-image: url(../img/header/background/graphic_desktop@2x.png);
+    background-image: url('../img/header/background/graphic_desktop@2x.png');
   }
 }
 
 /* Big Desktop */
 @media only screen and (min-width: 1440px) {
   .header-hero-container {
-    background-image: url(../img/header/background/graphic_big_desktop@1x.png);
+    background-image: url('../img/header/background/graphic_big_desktop@1x.png');
   }
 }
 
 @media only screen and (min-width: 1440px) and (min-resolution: 192dpi) {
   .header-hero-container {
-    background-image: url(../img/header/background/graphic_big_desktop@2x.png);
+    background-image: url('../img/header/background/graphic_big_desktop@2x.png');
   }
 }
 
@@ -143,33 +143,33 @@
   .header .container {
     display: flex;
   }
-  
+
   .header-nav {
     flex-basis: 100%;
     margin-right: 14px;
   }
-  
+
   .header .signup-btn {
     display: flex;
     align-items: center;
     justify-content: center;
     flex-shrink: 0;
   }
-  
+
   .header {
     padding-bottom: 40px;
   }
-  
+
   .header-logo-signup {
     display: none;
   }
-  
+
   .header-btn {
     margin-left: auto;
     width: 40px;
     height: 28px;
   }
-  
+
   .header-logo {
     width: 123px;
     padding: 20px 0;
@@ -182,13 +182,13 @@
   .header-btn {
     display: none;
   }
-  
+
   .header-menu {
     display: flex;
     gap: 28px;
     margin-left: auto;
   }
-  
+
   .header-menu-link {
     display: block;
     padding: 20px 0;
@@ -200,18 +200,18 @@
     transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1),
       font-weight 250ms cubic-bezier(0.4, 0, 0.2, 1);
   }
-  
+
   .header-menu-link:hover,
   .header-menu-link:focus {
     color: var(--brown);
     font-weight: 700;
   }
-  
+
   .header-nav {
     padding: 0 50px;
     margin-right: 20px;
   }
-  
+
   .header {
     padding-bottom: 80px;
   }
@@ -260,12 +260,12 @@
   padding-top: 180px;
   padding-left: 20px;
   background-color: var(--brown);
-  background-image: url(../img/header/menu/header_menu_cam_mobile@1x.jpg);
+  background-image: url('../img/header/menu/header_menu_cam_mobile@1x.jpg');
   background-image: image-set(
-    url(../img/header/menu/header_menu_cam_mobile@1x.webp) 1x,
-    url(../img/header/menu/header_menu_cam_mobile@2x.webp) 2x,
-    url(../img/header/menu/header_menu_cam_mobile@1x.jpg) 1x,
-    url(../img/header/menu/header_menu_cam_mobile@2x.jpg) 2x
+    url('../img/header/menu/header_menu_cam_mobile@1x.webp') 1x,
+    url('../img/header/menu/header_menu_cam_mobile@2x.webp') 2x,
+    url('../img/header/menu/header_menu_cam_mobile@1x.jpg') 1x,
+    url('../img/header/menu/header_menu_cam_mobile@2x.jpg') 2x
   );
   background-repeat: no-repeat;
   background-size: contain;
@@ -331,19 +331,19 @@
     width: 480px;
     padding-top: 232px;
     padding-left: 64px;
-    background-image: url(../img/header/menu/header_menu_cam_tablet@1x.jpg);
+    background-image: url('../img/header/menu/header_menu_cam_tablet@1x.jpg');
     background-image: image-set(
-      url(../img/header/menu/header_menu_cam_tablet@1x.webp) 1x,
-      url(../img/header/menu/header_menu_cam_tablet@2x.webp) 2x,
-      url(../img/header/menu/header_menu_cam_tablet@1x.jpg) 1x,
-      url(../img/header/menu/header_menu_cam_tablet@2x.jpg) 2x
+      url('../img/header/menu/header_menu_cam_tablet@1x.webp') 1x,
+      url('../img/header/menu/header_menu_cam_tablet@2x.webp') 2x,
+      url('../img/header/menu/header_menu_cam_tablet@1x.jpg') 1x,
+      url('../img/header/menu/header_menu_cam_tablet@2x.jpg') 2x
     );
   }
-  
+
   .mobile-menu-nav > .mobile-menu-item:not(:last-child) > .mobile-menu-link {
     padding-bottom: 28px;
   }
-  
+
   .menu-btn {
     width: 40px;
     height: 40px;
