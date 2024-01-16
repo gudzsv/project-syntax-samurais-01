@@ -228,7 +228,7 @@
   padding-top: 180px;
   padding-left: 20px;
   background-color: var(--brown);
-  background-image: url(../img/header/menu/header_menu_cam_mobile@1x.jpg);
+  background-image: url(../img/header/menu/header_menu_cam_mobile@1x.webp);
   background-repeat: no-repeat;
   background-size: contain;
   background-position: bottom;
@@ -239,9 +239,21 @@
 }
 @media (min-resolution: 192dpi) {
   .mobile-menu {
-    background-image: url(../img/header/menu/header_menu_cam_mobile@2x.jpg);
+    background-image: url(../img/header/menu/header_menu_cam_mobile@2x.webp);
   }
 }
+@supports (-webkit-image-set: url(0) 1x) {
+  .mobile-menu {
+    background-image: url(../img/header/menu/header_menu_cam_mobile@1x.jpg);
+  }
+
+  @media (min-resolution: 192dpi) {
+    .mobile-menu {
+      background-image: url(../img/header/menu/header_menu_cam_mobile@2x.jpg);
+    }
+  }
+}
+
 .mobile-menu.is-open {
   transform: translateX(0);
   visibility: visible;
@@ -292,7 +304,7 @@
     width: 480px;
     padding-top: 232px;
     padding-left: 64px;
-    background-image: url(../img/header/menu/header_menu_cam_tablet@1x.jpg);
+    background-image: url(../img/header/menu/header_menu_cam_tablet@1x.webp);
   }
   .mobile-menu-nav > .mobile-menu-item:not(:last-child) > .mobile-menu-link {
     padding-bottom: 28px;
@@ -305,6 +317,19 @@
 }
 @media only screen and (min-width: 768px) and (min-resolution: 192dpi) {
   .mobile-menu {
-    background-image: url(../img/header/menu/header_menu_cam_tablet@2x.jpg);
+    background-image: url(../img/header/menu/header_menu_cam_tablet@2x.webp);
+  }
+}
+
+@supports (-webkit-image-set: url(0) 1x) {
+  @media only screen and (min-width: 768px) {
+    .mobile-menu {
+      background-image: url(../img/header/menu/header_menu_cam_tablet@1x.jpg);
+    }
+  }
+  @media only screen and (min-width: 768px) and (min-resolution: 192dpi) {
+    .mobile-menu {
+      background-image: url(../img/header/menu/header_menu_cam_tablet@2x.jpg);
+    }
   }
 }
