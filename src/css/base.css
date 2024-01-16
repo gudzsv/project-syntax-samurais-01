@@ -22,9 +22,16 @@ body {
   background-color: var(--black);
 }
 
+section {
+  min-width: 320px;
+  width: 100%;
+}
+
 /* Mobile */
 .container {
+  min-width: 320px;
   max-width: 375px;
+  width: 100%;
   padding: 0 20px;
   margin: 0 auto;
 }
@@ -178,9 +185,9 @@ body {
   white-space: nowrap;
   width: 1px;
   height: 1px;
-  overflow: hidden;
+  margin: -1px;
   border: 0;
   padding: 0;
+  overflow: hidden;
   clip-path: inset(50%);
-  margin: -1px;
 }
