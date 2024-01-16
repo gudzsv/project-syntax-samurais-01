@@ -260,12 +260,7 @@
   padding-top: 180px;
   padding-left: 20px;
   background-color: var(--brown);
-  background-image: image-set(
-    '../img/header/menu/header_menu_cam_mobile@1x.webp' type('image/webp') 1x,
-    '../img/header/menu/header_menu_cam_mobile@2x.webp' type('image/webp') 2x,
-    '../img/header/menu/header_menu_cam_mobile@1x.jpg' type('image/jpg') 1x,
-    '../img/header/menu/header_menu_cam_mobile@2x.jpg' type('image/jpg') 2x
-  );
+  background-image: url('../img/header/menu/header_menu_cam_mobile@1x.webp');
   background-repeat: no-repeat;
   background-size: contain;
   background-position: bottom;
@@ -274,7 +269,11 @@
   transition: transform 500ms cubic-bezier(0.4, 0, 0.2, 1),
     visibility 500ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-
+@media (min-resolution: 192dpi) {
+  .mobile-menu {
+    background-image: url('../img/header/menu/header_menu_cam_mobile@2x.webp');
+  }
+}
 .mobile-menu.is-open {
   transform: translateX(0);
   visibility: visible;
@@ -330,21 +329,19 @@
     width: 480px;
     padding-top: 232px;
     padding-left: 64px;
-    background-image: image-set(
-      '../img/header/menu/header_menu_cam_tablet@1x.webp' type('image/webp') 1x,
-      '../img/header/menu/header_menu_cam_tablet@2x.webp' type('image/webp') 2x,
-      '../img/header/menu/header_menu_cam_tablet@1x.jpg' type('image/jpg') 1x,
-      '../img/header/menu/header_menu_cam_tablet@2x.jpg' type('image/jpg') 2x
-    );
+    background-image: url('../img/header/menu/header_menu_cam_tablet@1x.webp');
   }
-
   .mobile-menu-nav > .mobile-menu-item:not(:last-child) > .mobile-menu-link {
     padding-bottom: 28px;
   }
-
   .menu-btn {
     width: 40px;
     height: 40px;
     right: 32px;
+  }
+}
+@media only screen and (min-width: 768px) and (min-resolution: 192dpi) {
+  .mobile-menu {
+    background-image: url('../img/header/menu/header_menu_cam_tablet@2x.webp');
   }
 }
