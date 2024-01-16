@@ -1,1 +1,16 @@
-@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,400;0,9..40,500;0,9..40,700;1,9..40,400&display=swap');
+/* @import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,400;0,9..40,500;0,9..40,700;1,9..40,400&display=swap'); */
+@font-face {
+  font-family: 'DM Sans';
+  src: url(../font/DMSans-Regular.woff);
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'DM Sans Italic';
+  src: url(../font/DMSans-Italic.woff);
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
