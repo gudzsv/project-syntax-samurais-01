@@ -45,13 +45,12 @@
 }
 
 .mentors-img {
-    border-radius: 50%;
     margin: 0 auto;
-    display: block;
+    margin-bottom: 16px;
 }
 
 .mentors-img {
-    padding-bottom: 16px;
+    
 }
 
 .mentors-list-items+.mentors-list-items {
