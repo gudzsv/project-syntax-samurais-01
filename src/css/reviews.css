@@ -1,3 +1,6 @@
+.section-mt.review {
+  padding-bottom: 80px;
+}
 .reviews-title {
   color: var(--white);
   font-family: DM Sans;
@@ -39,6 +42,10 @@
 }
 
 @media only screen and (min-width: 768px) {
+  .section-mt.review {
+    padding-bottom: 100px;
+  }
+
   .reviews-item {
     position: relative;
   }
@@ -53,6 +60,10 @@
   }
 }
 @media only screen and (min-width: 1280px) {
+  .section-mt.review {
+    padding-bottom: 150px;
+  }
+
   .reviews-item.girl {
     display: block;
   }
