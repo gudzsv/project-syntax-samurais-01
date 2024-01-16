@@ -64,9 +64,10 @@
   display: inline-flex;
   justify-content: center;
   align-items: flex-start;
-  gap: 40px;
 }
-
+.hero-users {
+  margin-right: 40px;
+}
 @media only screen and (min-width: 768px) {
   .hero-users {
     display: flex;
@@ -202,7 +203,7 @@
     right: 50px;
     width: 397px;
   }
-  
+
   .hero-container {
     position: relative;
   }
