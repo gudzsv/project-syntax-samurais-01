@@ -8,12 +8,12 @@ function formInfo(event) {
     message: event.target.elements.message.value,
   };
   const sentMessage = `
-	Hello ${signData.name} we have got your data:
-	-Your Name: ${signData.name}
-	-Your Email: ${signData.email}
-	-Your Message: ${signData.message}
-	Thanks for your Sign Up, we'll get back to you shortly
-	`;
+Hello ${signData.name} we have got your data:
+-Your Name: ${signData.name}
+-Your Email: ${signData.email}
+-Your Message: ${signData.message}
+Thanks for your Sign Up, we'll get back to you shortly
+`;
 
   alert(sentMessage);
 
