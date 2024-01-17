@@ -5,37 +5,41 @@
 
 .hero-content {
   padding-left: 20px;
+  padding-right: 20px;
+  padding-top: 40px;
+  padding-bottom: 30px;
 }
 
 @media only screen and (min-width: 768px) {
   .hero-content {
     padding-left: 32px;
+    padding-top: 64px;
+    padding-bottom: 40px;
   }
 }
 
 @media only screen and (min-width: 1280px) {
   .hero-content {
     padding-left: 50px;
+    padding-top: 80px;
+    padding-bottom: 50px;
   }
 }
 
 .hero-title {
   max-width: 295px;
-  padding-top: 40px;
   margin-bottom: 20px;
 }
 
 @media only screen and (min-width: 768px) {
   .hero-title {
     max-width: 517px;
-    padding-top: 64px;
   }
 }
 
 @media only screen and (min-width: 1280px) {
   .hero-title {
     max-width: 563px;
-    padding-top: 80px;
   }
 }
 
@@ -62,11 +66,8 @@
 
 .hero-block {
   display: inline-flex;
-  justify-content: center;
   align-items: flex-start;
-}
-.hero-users {
-  margin-right: 40px;
+  gap: 40px;
 }
 @media only screen and (min-width: 768px) {
   .hero-users {
@@ -81,17 +82,12 @@
   }
 }
 
-@media only screen and (min-width: 1280px) {
-  .hero-block {
-    padding-bottom: 50px;
-  }
-}
-
 .hero-users-list {
   list-style: none;
   padding: 0;
   margin: 0;
   display: flex;
+  min-width: 109px;
 }
 
 .hero-users-item {
@@ -193,7 +189,6 @@
 
 .hero-img {
   margin: 0 auto;
-  margin-top: 30px;
 }
 
 @media only screen and (min-width: 1280px) {
