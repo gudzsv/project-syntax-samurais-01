@@ -17,3 +17,19 @@ function handleModalButtonClick(e) {
 
   toggleModal(mobileMenu, backdrop);
 }
+
+///------- To top Button -----//
+
+const btnTop = document.getElementById('scroll-btn-top');
+window.onscroll = scrollFunction;
+
+function scrollFunction() {
+  btnTop.style.display =
+    document.body.scrollTop > 250 || document.documentElement.scrollTop > 250
+      ? 'flex'
+      : 'none';
+}
+
+btnTop.addEventListener('click', () => {
+  window.scrollTo({ top: 0, behavior: 'smooth' });
+});
