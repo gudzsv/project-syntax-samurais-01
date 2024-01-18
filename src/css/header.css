@@ -196,7 +196,6 @@
     font-size: 14px;
     line-height: 1.29;
     text-transform: uppercase;
-    scroll-behavior: smooth;
     transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1),
       font-weight 250ms cubic-bezier(0.4, 0, 0.2, 1);
   }
@@ -307,7 +306,6 @@
   font-size: 14px;
   line-height: 1.29;
   text-transform: uppercase;
-  scroll-behavior: smooth;
   transition: font-weight 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
