@@ -11,8 +11,9 @@ function toggleModal(...elements) {
 mobileMenu.addEventListener('click', handleModalButtonClick);
 
 function handleModalButtonClick(e) {
-  const target = e.target.closest('.menu-btn');
-  if (!target) return;
+  const isMenuBtn = e.target.closest('.menu-btn');
+  const isMobileMenuLink = e.target.closest('.mobile-menu-link');
+  if (!isMenuBtn && !isMobileMenuLink) return;
 
   toggleModal(mobileMenu, backdrop);
 }
