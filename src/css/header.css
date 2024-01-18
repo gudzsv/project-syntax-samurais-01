@@ -64,7 +64,7 @@
   display: flex;
   align-items: center;
   border-radius: 12px;
-  border: 1px solid rgba(255, 255, 255, 0.2);
+  border: 1px solid var(--gray);
   padding: 0 20px;
   background-color: var(--black);
 }
@@ -76,7 +76,8 @@
 
 .header-logo,
 .header-logo-signup,
-.header-btn {
+.header-btn,
+.scroll-btn {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -237,8 +238,8 @@
   opacity: 0;
   visibility: hidden;
   pointer-events: none;
-  transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1),
-    visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: opacity 700ms cubic-bezier(0.4, 0, 0.2, 1),
+    visibility 700ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .backdrop.is-open {
@@ -265,8 +266,8 @@
   background-position: bottom;
   transform: translateX(100%);
   visibility: hidden;
-  transition: transform 500ms cubic-bezier(0.4, 0, 0.2, 1),
-    visibility 500ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: transform 700ms cubic-bezier(0.4, 0, 0.2, 1),
+    visibility 700ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 @media (min-resolution: 192dpi) {
   .mobile-menu {
@@ -342,4 +343,27 @@
   .mobile-menu {
     background-image: url('../img/header/menu/header_menu_cam_tablet@2x.webp');
   }
+}
+.scroll-btn {
+  position: fixed;
+  z-index: 5;
+  bottom: 20px;
+  right: 25px;
+  padding: 0;
+  border: 1px solid var(--gray);
+  outline: none;
+  border-radius: 50%;
+  background-color: var(--fill);
+  color: var(--gray);
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.scroll-btn:hover,
+.scroll-btn:focus,
+.scroll-btn:active {
+  color: var(--white);
+  border-color: var(--white);
+}
+.scroll-btn-icon {
+  fill: currentColor;
 }
