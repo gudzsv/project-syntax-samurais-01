@@ -156,7 +156,8 @@
 .svg-icon {
   display: block;
   transition: width 250ms cubic-bezier(0.4, 0, 0.2, 1),
-    height 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    height 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    stroke 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .courses-link:active > .svg-icon {
@@ -169,6 +170,9 @@
   .courses-link:focus > .svg-icon {
     width: 25px;
     height: 25px;
+  }
+  .courses-item:hover .svg-icon {
+    stroke: var(--white);
   }
 }
 
