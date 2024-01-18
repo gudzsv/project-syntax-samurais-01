@@ -86,10 +86,10 @@
   .courses-item:hover {
     box-shadow: 0 0 8px -1px var(--gray-light), 0 1px 1px #bea69e29,
       0 1px 6px #bea69e29;
-
-    /* box-shadow: 0px 0px 5px 4px rgb(126 121 127),
-      0px 1px 1px 0px rgba(190, 166, 158, 0.16),
-      0px 1px 6px 0px rgba(190, 166, 158, 0.16);*/
+  }
+  .courses-item:hover .courses-link {
+    background-color: var(--brown);
+    stroke: var(--fill);
   }
 }
 
@@ -150,17 +150,13 @@
   stroke: #777777;
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
     stroke 250ms cubic-bezier(0.4, 0, 0.2, 1),
-    width 250ms cubic-bezier(0.4, 0, 0.2, 1),
-    height 250ms cubic-bezier(0.4, 0, 0.2, 1),
-    box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1),
-    border 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .svg-icon {
   display: block;
   transition: width 250ms cubic-bezier(0.4, 0, 0.2, 1),
-    height 250ms cubic-bezier(0.4, 0, 0.2, 1),
-    stroke 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    height 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .courses-link:active > .svg-icon {
@@ -181,8 +177,6 @@
   }
   .courses-link:hover,
   .courses-link:focus {
-    stroke: var(--fill);
-    background-color: var(--brown);
     box-shadow: 0 0 8px -1px var(--gray-light), 0 1px 1px #bea69e29,
       0 1px 6px #bea69e29;
   }
