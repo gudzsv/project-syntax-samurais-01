@@ -11,9 +11,9 @@ export default defineConfig(({ command }) => {
     root: 'src',
     build: {
       assetsDir: 'assets',
-      assetsInclude: ['.src/fonts/**'],
+      assetsInclude: ['fonts/**'],
       sourcemap: true,
-      chunkSizeWarningLimit: 600,
+      chunkSizeWarningLimit: 900,
 
       rollupOptions: {
         input: glob.sync('./src/*.html'),
