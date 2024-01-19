@@ -11,7 +11,7 @@ export default defineConfig(({ command }) => {
     root: 'src',
     build: {
       assetsDir: 'assets',
-      assetsInclude: ['.src/fonts/**'],
+      assetsInclude: ['fonts/**'],
       sourcemap: true,
       chunkSizeWarningLimit: 900,
 
