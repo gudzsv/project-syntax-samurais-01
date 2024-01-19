@@ -296,7 +296,6 @@
 }
 
 .footer-safety {
-  display: flex;
   width: 100%;
   justify-content: space-between;
   font-size: 12px;
@@ -308,4 +307,24 @@
     font-size: 14px;
     line-height: 1.29;
   }
+}
+
+@media only screen and (min-width: 1280px) {
+  .footer-safety {
+    display: flex;
+  }
+}
+
+.foot-privacy-list {
+  margin-bottom: 10px;
+}
+
+@media only screen and (min-width: 1280px) {
+  .foot-privacy-list {
+    margin-bottom: 0;
+  }
+}
+
+.foot-privacy-polisy {
+  text-transform: capitalize;
 }
