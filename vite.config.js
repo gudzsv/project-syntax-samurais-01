@@ -13,7 +13,7 @@ export default defineConfig(({ command }) => {
       assetsDir: 'assets',
       assetsInclude: ['.src/fonts/**'],
       sourcemap: true,
-      chunkSizeWarningLimit: 600,
+      chunkSizeWarningLimit: 900,
 
       rollupOptions: {
         input: glob.sync('./src/*.html'),
