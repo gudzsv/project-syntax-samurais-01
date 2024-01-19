@@ -72,7 +72,14 @@
   background: var(--fill-linear);
   transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-
+.courses-item:hover {
+  box-shadow: 0 0 8px -1px var(--gray-light), 0 1px 1px #bea69e29,
+    0 1px 6px #bea69e29;
+}
+.courses-item:hover .courses-link {
+  background-color: var(--brown);
+  stroke: var(--fill);
+}
 @media only screen and (min-width: 768px) {
   .courses-item {
     max-width: 342px;
@@ -84,14 +91,6 @@
 @media only screen and (min-width: 1280px) {
   .courses-item {
     max-width: 347px;
-  }
-  .courses-item:hover {
-    box-shadow: 0 0 8px -1px var(--gray-light), 0 1px 1px #bea69e29,
-      0 1px 6px #bea69e29;
-  }
-  .courses-item:hover .courses-link {
-    background-color: var(--brown);
-    stroke: var(--fill);
   }
 }
 
@@ -182,9 +181,6 @@
     box-shadow: 0 0 8px -1px var(--gray-light), 0 1px 1px #bea69e29,
       0 1px 6px #bea69e29;
   }
-}
-
-@media only screen and (min-width: 1280px) {
 }
 
 .courses-title-item {
