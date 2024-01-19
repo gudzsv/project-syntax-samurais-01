@@ -10,7 +10,9 @@ export default defineConfig(({ command }) => {
     },
     root: 'src',
     build: {
+      assetsDir: 'assets',
       sourcemap: true,
+      chunkSizeWarningLimit: 600,
 
       rollupOptions: {
         input: glob.sync('./src/*.html'),
