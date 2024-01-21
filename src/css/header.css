@@ -76,8 +76,7 @@
 
 .header-logo,
 .header-logo-signup,
-.header-btn,
-.scroll-btn {
+.header-btn {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -345,6 +344,10 @@
   }
 }
 .scroll-btn {
+  display: none;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
   position: fixed;
   z-index: 5;
   bottom: 20px;
