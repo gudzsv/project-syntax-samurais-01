@@ -6,6 +6,7 @@ burgerBtn.addEventListener('click', () => toggleModal(backdrop, mobileMenu));
 
 function toggleModal(...elements) {
   elements.forEach(element => element.classList.toggle('is-open'));
+  document.documentElement.classList.toggle('scroll-disabled');
 }
 
 backdrop.addEventListener('click', handleModalButtonClick);
