@@ -276,6 +276,7 @@
 .mobile-menu.is-open {
   transform: translateX(0);
   visibility: visible;
+  overflow-y: hidden;
 }
 
 .menu-btn {

@@ -8,13 +8,18 @@ function toggleModal(...elements) {
   elements.forEach(element => element.classList.toggle('is-open'));
 }
 
-mobileMenu.addEventListener('click', handleModalButtonClick);
+backdrop.addEventListener('click', handleModalButtonClick);
 
 function handleModalButtonClick(e) {
   const isMenuBtn = e.target.closest('.menu-btn');
   const isMobileMenuLink = e.target.closest('.mobile-menu-link');
-  if (!isMenuBtn && !isMobileMenuLink) return;
-
+  if (!isMenuBtn && !isMobileMenuLink) {
+    const isMobile = e.target.closest('.mobile-menu');
+    if (!isMobile) {
+      toggleModal(mobileMenu, backdrop);
+    }
+    return;
+  }
   toggleModal(mobileMenu, backdrop);
 }
 
