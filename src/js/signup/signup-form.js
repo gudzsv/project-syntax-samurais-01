@@ -1,7 +1,10 @@
 const signupForm = document.querySelector('.signup-form');
 
+signupForm.addEventListener('submit', formInfo);
+
 function formInfo(event) {
   event.preventDefault();
+
   const signData = {
     name: event.target.elements.name.value,
     email: event.target.elements.email.value,
@@ -19,5 +22,3 @@ Thanks for your Sign Up, we'll get back to you shortly
 
   event.target.reset();
 }
-
-signupForm.addEventListener('submit', formInfo);
